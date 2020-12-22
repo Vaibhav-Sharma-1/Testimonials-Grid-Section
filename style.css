@@ -1,0 +1,135 @@
+body{
+    background-color: hsl(210, 46%, 95%)
+    ;
+    margin: 0;
+    padding: 0;
+}
+#container {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    display: grid;
+    grid-template-areas:
+    'item-1 item-1 item-1 item-1 item-2 item-2 item-5'
+    'item-3 item-3 item-4 item-4 item-4 item-4 item-5'
+    
+    ;
+    margin: 50px;
+    padding: 50px;
+    margin-top: 0;
+}
+img{
+    float: left;
+    border-radius: 100px;
+    margin-right: 10px;
+    width: 40px;
+}
+.item{
+    margin: 10px;
+    padding: 10px;
+}
+
+#item-1 {
+    grid-area: item-1;
+    background-color: hsl(263, 55%, 52%);;
+    color: white;
+    border-radius: 23px;
+    padding: 35px;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top,right;
+}
+
+#item-2 {
+    grid-area: item-2;
+    background-color: hsl(217, 19%, 35%);;
+    color: white;
+    border-radius: 23px;
+    padding: 35px;
+}
+
+#item-3 {
+    grid-area: item-3;
+    background-color: white;
+    border-radius: 23px;
+    padding: 35px;
+}
+
+#item-4 {
+    grid-area: item-4;
+    background-color: hsl(219, 29%, 14%);;
+    color: white;
+    border-radius: 23px;
+    padding: 35px;
+}
+
+#item-5 {
+    grid-area: item-5;
+    background-color: white;
+    border-radius: 23px;
+    padding: 35px;
+}
+#item-1-p{
+    margin-top: 45px;
+}
+#item-2-h2{
+    margin-top: 27px;
+}
+#item-2-p{
+    margin-top: 69px;
+}
+#item-3-p{
+    margin-top: 46px;
+}
+#item-5-h2{
+    margin-top: 10px;
+}
+#item-5-p{
+    margin-top:50px;
+    
+    
+}
+h3,h4{
+    margin-top: 0%;
+}
+h3{
+    margin-bottom: 0;
+}
+h4{
+    opacity: 50%;
+}
+p{
+    opacity: 70%;
+    font-weight: 400;
+}
+@media only screen and (max-width:1200px){
+    #container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        
+    }
+    .item{
+        margin-left: 0;
+        margin-right: 0;
+        width: 100vw;
+    }
+    #item-1-p{
+        margin-top: 10px;
+    }
+    #item-2-h2{
+        margin-top: 10px;
+    }
+    #item-2-p{
+        margin-top: 10px;
+    }
+    #item-3-p{
+        margin-top: 10px;
+    }
+    #item-5-h2{
+        margin-top: 10px;
+    }
+    #item-5-p{
+        margin-top:10px;
+
+   
+}
